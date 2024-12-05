@@ -12,7 +12,7 @@
 
 ## 📋 Professional Summary
 
-Full Stack Developer with 3 years of expertise in architecting and implementing scalable web applications. I specialize in front-end frameworks like **Vue.js** and **React** and back-end development with **PHP** and **Node.js**, and I have comprehensive experience in cloud platforms and database management. Skilled in delivering high-performance, user-centric solutions with a strong focus on security, responsiveness, and API integrations. Proven ability to enhance workflows through automation, testing, and CI/CD pipelines.
+Full Stack Developer with 3 years of expertise in architecting and implementing scalable web applications. I specialize in front-end frameworks like **Vue.js** and **React.js** and back-end development with **PHP** and **Node.js**, and I have comprehensive experience in cloud platforms and database management. Skilled in delivering high-performance, user-centric solutions with a strong focus on security, responsiveness, and API integrations. Proven ability to enhance workflows through automation, testing, and CI/CD pipelines.
 
 ---
 
@@ -21,7 +21,7 @@ Full Stack Developer with 3 years of expertise in architecting and implementing 
 - **Front-End Development**: HTML5, CSS3, Bootstrap, JavaScript (ES6+), JQuery, Vue.js, React.js  
 - **Back-End Development**: PHP (OOPs), REST APIs, Node js 
 - **Database Management**: MySQL, MongoDB, Redis, DynamoDB, PostgreSQL  
-- **Cloud & DevOps**: AWS (EC2, S3, Lambda, DynamoDB), Docker, Jenkins, Git, CI/CD Pipelines  
+- **Cloud & DevOps**: AWS (EC2, S3, Lambda, DynamoDB), Docker, Jenkins, Git  
 - **Testing & Debugging**: Cypress, Postman, PHPUnit, Selenium, SonarQube  
 - **Version Control**: Git (GitHub, GitLab)  
 - **Other**: API Integration, Performance Optimization  
