@@ -3,7 +3,7 @@
 <h1 align="center">Hi, I'm Sai kiran! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="40"></h1>
 
 <p align="center">
-  <a href="www.linkedin.com/in/sai-kiran-malladi"><img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"></a>&nbsp;
+  <a href="https://www.linkedin.com/in/sai-kiran-malladi"><img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"></a>&nbsp;
   <a href="https://github.com/saikiran3321"><img src="https://img.shields.io/github/followers/saikiran3321?label=Follow&style=for-the-badge" alt="GitHub Badge"></a>&nbsp;
   <a href="mailto:kiransaikiran057@gmail.com"><img src="https://img.shields.io/badge/Email-me-blue?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
 </p>
@@ -82,8 +82,7 @@ Technologies: Vue.js, PHP, MongoDB, API Integration
 
 ### 🛠 &nbsp;Languages and Tools
 
-<div style="overflow-x: auto;">
-<marquee behavior="scroll" direction="left" scrollamount="5">
+<div style="overflow-x: auto; white-space: nowrap;">
 <table align="center">
   <tr>
     <td>
@@ -192,11 +191,10 @@ Technologies: Vue.js, PHP, MongoDB, API Integration
     </td>
   </tr>
 </table>
-</marquee>
 </div>
 
 ---
 
 ### 🤝 &nbsp;Let's Connect
 
-- 💬 I'm always open to discussing new ideas, contributing to interesting projects, or simply talking tech. Feel free to connect with me via [LinkedIn](www.linkedin.com/in/sai-kiran-malladi) or send me an [email](mailto:kiransaikiran057@gmail.com).
+- 💬 I'm always open to discussing new ideas, contributing to interesting projects, or simply talking tech. Feel free to connect with me via [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/sai-kiran-malladi)send me an [email](mailto:kiransaikiran057@gmail.com).
