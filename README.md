@@ -12,14 +12,14 @@
 
 ## 📋 Professional Summary
 
-Full Stack Developer with 3 years of expertise in architecting and implementing scalable web applications. Specialized in front-end frameworks like **Vue.js** and **React** and back-end development with **PHP** and **Node.js**, coupled with comprehensive experience in cloud platforms and database management. Skilled in delivering high-performance, user-centric solutions with a strong focus on security, responsiveness, and API integrations. Proven ability to enhance workflows through automation, testing, and CI/CD pipelines.
+Full Stack Developer with 3 years of expertise in architecting and implementing scalable web applications. I specialize in front-end frameworks like **Vue.js** and **React** and back-end development with **PHP** and **Node.js**, and I have comprehensive experience in cloud platforms and database management. Skilled in delivering high-performance, user-centric solutions with a strong focus on security, responsiveness, and API integrations. Proven ability to enhance workflows through automation, testing, and CI/CD pipelines.
 
 ---
 
 ## 🛠 Technical Skills
 
 - **Front-End Development**: HTML5, CSS3, Bootstrap, JavaScript (ES6+), JQuery, Vue.js, React.js  
-- **Back-End Development**: PHP (OOP’s), REST APIs, Node js 
+- **Back-End Development**: PHP (OOPs), REST APIs, Node js 
 - **Database Management**: MySQL, MongoDB, Redis, DynamoDB, PostgreSQL  
 - **Cloud & DevOps**: AWS (EC2, S3, Lambda, DynamoDB), Docker, Jenkins, Git, CI/CD Pipelines  
 - **Testing & Debugging**: Cypress, Postman, PHPUnit, Selenium, SonarQube  
@@ -36,7 +36,7 @@ Full Stack Developer with 3 years of expertise in architecting and implementing 
 
 - Spearheaded the development of high-traffic web platforms using **Vue.js** and **PHP**, supporting thousands of users.  
 - Architected serverless applications with **AWS** services (EC2, S3, Lambda), reducing infrastructure costs by 20%.  
-- Led the design and deployment of RESTful APIs integrating complex banking systems.  
+- Led the design and deployment of RESTful APIs that integrated complex banking systems.  
 - Streamlined deployments with **Docker**, **Jenkins**, and automated test suites, reducing production deployment time by 30%.  
 - Enhanced application security and performance, decreasing server downtime by 40%.  
 - Collaborated with teams to deliver projects ahead of deadlines, improving user engagement by 12%.  
@@ -197,4 +197,4 @@ Technologies: Vue.js, PHP, MongoDB, API Integration
 
 ### 🤝 &nbsp;Let's Connect
 
-- 💬 I'm always open to discussing new ideas, contributing to interesting projects, or simply talking tech. Feel free to connect with me via [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/sai-kiran-malladi)send me an [email](mailto:kiransaikiran057@gmail.com).
+- 💬 I'm always open to discussing new ideas, contributing to interesting projects, or simply talking tech. Feel free to connect with me via [LinkedIn](https://www.linkedin.com/in/sai-kiran-malladi) or send me an [email](mailto:kiransaikiran057@gmail.com).
