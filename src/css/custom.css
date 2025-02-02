@@ -1,0 +1,377 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+/* html {
+  background-size: 16px 16px;
+  background-image: radial-gradient(#2f7df4 1px, transparent 0);
+} */
+
+:root {
+  font-family: Cambria, Times New Roman, Avenir, Helvetica, Arial, sans-serif;
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --icon-color: #222;
+  --ifm-global-spacing: 0.25rem !important;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --icon-color: #fff;
+}
+
+/* General Navbar Styling */
+.navbar-icon-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+  filter: invert(0%);
+}
+
+[data-theme='dark'] .navbar-icon  {
+  filter: invert(100%);
+}
+
+[data-theme='dark'] .icon-buttons {
+  filter: invert(100%);
+}
+
+[data-theme='dark'] .resume-link img {
+  filter: invert(100%);
+}
+
+[data-theme='dark'] .icon-change {
+  filter: invert(100%);
+}
+
+.navbar__item {
+  padding: 5px !important;
+}
+/* Default Light Mode (Logo stays normal) */
+.navbar__logo img {
+  /* filter: invert(0%); */
+  filter: invert(55%) sepia(100%) saturate(500%) hue-rotate(190deg) brightness(105%) contrast(110%);
+  transition: filter 0.3s ease-in-out;
+  margin: 0px 20px;
+}
+
+.navbar__link--active {
+  filter: invert(55%) sepia(100%) saturate(500%) hue-rotate(190deg) brightness(105%) contrast(110%);
+}
+
+/* Hover Effects */
+.navbar-icon-wrapper:hover {
+  transform: scale(1.2); /* Slightly Increase Size */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-icon-wrapper:hover .navbar-icon {
+  transform: scale(1.1); /* Scale Icon */
+}
+
+/* Tooltip (for Label on Hover) */
+.tooltip {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Show Tooltip on Hover */
+.navbar-icon-wrapper:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-5px);
+}
+
+.navbar__inner {
+  display: flex;
+  flex-wrap: nowrap !important;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer {
+  background-color: #242526 !important;
+}
+
+.inline-buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.icon-text {
+  font-weight: 900;
+}
+
+.icon-buttons {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.icon-buttons img {
+  width: 30px;
+  height: 30px;
+}
+
+.animation-container {
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.text-container {
+  font-size: 2rem;
+  white-space: nowrap;
+  opacity: 0;
+  animation: slideRight 2s forwards;
+}
+
+.highlight {
+  color: rgba(0, 119, 255, 0.7); /* Green */
+  font-weight: bold;
+}
+
+.underline {
+  position: relative;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background-color: rgba(0, 119, 255, 0.7);
+}
+
+/* Second text animation */
+.text-animate {
+  font-size: 1.8rem;
+  white-space: nowrap;
+  opacity: 0;
+  animation: slideRight 2s forwards;
+  animation-delay: 3s;
+}
+
+/* Slide Right Effect */
+@keyframes slideRight {
+  from {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.hero__title {
+  display: flex;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.left-container {
+  width: 60%;
+}
+
+@media (max-width: 980px) {
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 20px !important;
+  }
+  .main-container {
+    display: inline;
+  }
+  .left-container {
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .container {
+    padding: 20px !important;
+  }
+  .main-container {
+    display: inline;
+  }
+  .left-container {
+    width: 100%;
+  }
+}
+@media (max-width: 390px) {
+  .container {
+    padding: 20px !important;
+  }
+  .main-container {
+    display: inline;
+  }
+  .left-container {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    padding: 20px !important;
+  }
+  .main-container {
+    display: inline;
+  }
+  .left-container {
+    width: 100%;
+  }
+}
+
+/* ------------------------ */
+
+/* Parent Container */
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  margin: 0px 20px;
+  /* transform: scale(1.1) rotateX(20deg) rotateY(20deg) translateZ(10px); */
+  /* transform: rotateX(40deg) rotateY(0deg) translateZ(0px); */
+  transform: rotate(-25deg) skew(10deg);
+  margin: 25px;
+}
+
+/* Icon Box */
+.icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border-radius: 12px;
+  transition: all 0.4s ease-in-out;
+  border: 1px solid rgba(0, 119, 255, 0.7);
+  /* animation: neonGlow 3.5s infinite alternate ease-in-out; */
+  transform-style: preserve-3d;
+  transform-origin: center;
+}
+
+/* Icon Image */
+.icon img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.4s ease-in-out;
+  opacity: 1;
+}
+
+/* Hover Effect */
+.icon-container:hover .icon {
+  transform: scale(1.1);
+  /* transform: rotateX(40deg) rotateY(0deg) translateZ(0px); */
+  /* transform: scale(1.1) rotate(-25deg) skew(10deg); */
+  /* transform: rotateX(20deg) rotateY(20deg) translateZ(20px); */
+}
+
+/* 3D Stacked Layers */
+.icon::before,
+.icon::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: 2px solid rgba(0, 119, 255, 0.7);
+  z-index: 1;
+  transition: transform 0.4s ease-in-out;
+  border-top: none;
+  border-right: none;
+}
+
+.icon::before {
+  top: 5px;
+  left: -7px;
+  opacity: 0.4;
+}
+
+.icon::after {
+  top: 10px;
+  left: -12px;
+  opacity: 0.3;
+}
+
+.icon::before:hover {
+  opacity: 0.2;
+  transform:  translate(10px,-10px);
+}
+
+.icon::after:hover {
+  opacity: 0.2;
+  transform:  translate(20px,-20px);
+}
+
+/* Neon Glow Animation */
+@keyframes neonGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 119, 255, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(0, 119, 255, 1);
+  }
+}
+
+/* Stacked Effect Animation */
+@keyframes stackEffect {
+  0% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(2px);
+  }
+}
