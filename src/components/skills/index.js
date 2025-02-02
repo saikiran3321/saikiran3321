@@ -16,7 +16,7 @@ const skills = () => {
                   <div style={{display: "flex",justifyContent: "space-between",alignItems: "center",flexWrap: "wrap"}}>
                     <div className="icon-container">
                       <div className="icon">
-                        <img className="icon-3d" src="/img/tech/html5.svg" alt="html" width={40} height={40}/>
+                        <img src="/img/tech/html5.svg" alt="html" width={40} height={40}/>
                       </div>
                       <span className="icon-text">HTML</span>
                     </div>
@@ -28,7 +28,7 @@ const skills = () => {
                     </div>
                     <div className="icon-container">
                       <div className="icon">
-                        <img src="/img/tech/bootstrap.svg" alt="css" width={40} height={40}/>
+                        <img src="/img/tech/bootstrap.svg" alt="bootstrap" width={40} height={40}/>
                       </div>
                       <span className="icon-text">Bootstrap</span>
                     </div>

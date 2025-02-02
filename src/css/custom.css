@@ -23,6 +23,7 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --icon-color: #222;
   --ifm-global-spacing: 0.25rem !important;
+  --new-color: #fff;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -36,6 +37,7 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --icon-color: #fff;
+  --new-color: #222;
 }
 
 /* General Navbar Styling */
@@ -374,4 +376,75 @@
   100% {
     transform: translateY(2px);
   }
+}
+
+/* Container for all steps */
+.steps-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Vertical line */
+.steps-container::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 18.5px;
+  width: 4px;
+  height: 100%;
+  background-color: var(--icon-color);
+  z-index: -1;
+}
+
+/* Each step */
+.step {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 40px;
+  white-space: normal;
+}
+
+/* Step Number (Circle) */
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: var(--icon-color);
+  color: var(--new-color);
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+  flex-shrink: 0;
+  top: 5px;
+}
+
+/* Step content */
+.step-content {
+  margin-left: 20px;
+  padding: 0px 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+  flex: 1;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.icon-tech {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.icon-tech img {
+  width: 35px;
+  height: 35px;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 1); */
 }
