@@ -103,7 +103,7 @@ const projects = () => {
                 <div class="step">
                   <div class="circle">04</div>
                   <div className="step-content">
-                    <div class="title">OLX Vehicle Financing</div>
+                    <div class="title">OLX Vehicle Finance</div>
                     <div className="icon-tech">
                       <img src="/img/tech/html5.svg" alt="html" width={30} height={30}/>
                       <img src="/img/tech/css3.svg" width={40} height={40} alt="CSS" />

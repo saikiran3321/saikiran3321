@@ -24,7 +24,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/saikiran3321/website',
+          editUrl: 'https://github.com/saikiran3321/saikiran3321',
         },
         blog: {
           showReadingTime: true,
@@ -32,7 +32,7 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          editUrl:'https://github.com/saikiran3321/website',
+          editUrl:'https://github.com/saikiran3321/saikiran3321',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
