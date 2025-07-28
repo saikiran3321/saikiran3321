@@ -21,3 +21,12 @@ slorber:
     linkedin: sebastienlorber
     github: slorber
     newsletter: https://thisweekinreact.com
+
+saikiran:
+  name: Sai Kiran Malladi
+  title: Full Stack Developer & AI Researcher
+  url: https://github.com/saikiran
+  image_url: https://github.com/saikiran.png
+  page: true
+  socials:
+    github: saikiran
