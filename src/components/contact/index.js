@@ -2,6 +2,48 @@ import React, { useEffect, useState } from "react";
 import Layout from '@theme/Layout';
 
 const contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState('');
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus('');
+
+    try {
+      // Create mailto link with form data
+      const subject = encodeURIComponent(formData.subject || 'Contact from Portfolio Website');
+      const body = encodeURIComponent(
+        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+      );
+      const mailtoLink = `mailto:kiransaikiran057@gmail.com?subject=${subject}&body=${body}`;
+      
+      // Open default email client
+      window.location.href = mailtoLink;
+      
+      setSubmitStatus('success');
+      setFormData({ name: '', email: '', subject: '', message: '' });
+    } catch (error) {
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <>
       <Layout title="Contact" description="Get in touch with me">
@@ -202,6 +244,205 @@ const contact = () => {
               <div style={{textAlign: "center", fontSize: "1rem", color: "var(--ifm-color-emphasis-600)"}}>
                 <p>📧 I typically respond to emails within 24 hours</p>
                 <p>📱 For urgent matters, feel free to call or WhatsApp</p>
+              </div>
+
+              {/* Contact Form */}
+              <div style={{marginTop: "60px"}}>
+                <h2 style={{marginBottom: "30px", textAlign: "center"}}>Send Me a Message</h2>
+                <div className="step-content" style={{padding: "40px", borderRadius: "15px", maxWidth: "800px", margin: "0 auto"}}>
+                  <form onSubmit={handleSubmit} style={{display: "flex", flexDirection: "column", gap: "25px"}}>
+                    {/* Name and Email Row */}
+                    <div style={{display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px"}}>
+                      <div style={{display: "flex", flexDirection: "column"}}>
+                        <label htmlFor="name" style={{marginBottom: "8px", fontWeight: "600", fontSize: "1.1rem"}}>
+                          Full Name *
+                        </label>
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          value={formData.name}
+                          onChange={handleInputChange}
+                          required
+                          style={{
+                            padding: "15px",
+                            border: "2px solid rgba(0, 119, 255, 0.3)",
+                            borderRadius: "8px",
+                            fontSize: "1rem",
+                            backgroundColor: "transparent",
+                            color: "inherit",
+                            transition: "border-color 0.3s ease"
+                          }}
+                          onFocus={(e) => e.target.style.borderColor = "rgba(0, 119, 255, 0.7)"}
+                          onBlur={(e) => e.target.style.borderColor = "rgba(0, 119, 255, 0.3)"}
+                          placeholder="Enter your full name"
+                        />
+                      </div>
+                      <div style={{display: "flex", flexDirection: "column"}}>
+                        <label htmlFor="email" style={{marginBottom: "8px", fontWeight: "600", fontSize: "1.1rem"}}>
+                          Email Address *
+                        </label>
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          value={formData.email}
+                          onChange={handleInputChange}
+                          required
+                          style={{
+                            padding: "15px",
+                            border: "2px solid rgba(0, 119, 255, 0.3)",
+                            borderRadius: "8px",
+                            fontSize: "1rem",
+                            backgroundColor: "transparent",
+                            color: "inherit",
+                            transition: "border-color 0.3s ease"
+                          }}
+                          onFocus={(e) => e.target.style.borderColor = "rgba(0, 119, 255, 0.7)"}
+                          onBlur={(e) => e.target.style.borderColor = "rgba(0, 119, 255, 0.3)"}
+                          placeholder="Enter your email address"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Subject */}
+                    <div style={{display: "flex", flexDirection: "column"}}>
+                      <label htmlFor="subject" style={{marginBottom: "8px", fontWeight: "600", fontSize: "1.1rem"}}>
+                        Subject *
+                      </label>
+                      <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        value={formData.subject}
+                        onChange={handleInputChange}
+                        required
+                        style={{
+                          padding: "15px",
+                          border: "2px solid rgba(0, 119, 255, 0.3)",
+                          borderRadius: "8px",
+                          fontSize: "1rem",
+                          backgroundColor: "transparent",
+                          color: "inherit",
+                          transition: "border-color 0.3s ease"
+                        }}
+                        onFocus={(e) => e.target.style.borderColor = "rgba(0, 119, 255, 0.7)"}
+                        onBlur={(e) => e.target.style.borderColor = "rgba(0, 119, 255, 0.3)"}
+                        placeholder="What's this about?"
+                      />
+                    </div>
+
+                    {/* Message */}
+                    <div style={{display: "flex", flexDirection: "column"}}>
+                      <label htmlFor="message" style={{marginBottom: "8px", fontWeight: "600", fontSize: "1.1rem"}}>
+                        Message *
+                      </label>
+                      <textarea
+                        id="message"
+                        name="message"
+                        value={formData.message}
+                        onChange={handleInputChange}
+                        required
+                        rows="6"
+                        style={{
+                          padding: "15px",
+                          border: "2px solid rgba(0, 119, 255, 0.3)",
+                          borderRadius: "8px",
+                          fontSize: "1rem",
+                          backgroundColor: "transparent",
+                          color: "inherit",
+                          transition: "border-color 0.3s ease",
+                          resize: "vertical",
+                          fontFamily: "inherit"
+                        }}
+                        onFocus={(e) => e.target.style.borderColor = "rgba(0, 119, 255, 0.7)"}
+                        onBlur={(e) => e.target.style.borderColor = "rgba(0, 119, 255, 0.3)"}
+                        placeholder="Tell me about your project, question, or how I can help you..."
+                      />
+                    </div>
+
+                    {/* Submit Button */}
+                    <div style={{display: "flex", justifyContent: "center", marginTop: "20px"}}>
+                      <button
+                        type="submit"
+                        disabled={isSubmitting}
+                        style={{
+                          padding: "15px 40px",
+                          backgroundColor: "rgba(0, 119, 255, 0.7)",
+                          color: "white",
+                          border: "none",
+                          borderRadius: "8px",
+                          fontSize: "1.1rem",
+                          fontWeight: "600",
+                          cursor: isSubmitting ? "not-allowed" : "pointer",
+                          transition: "all 0.3s ease",
+                          opacity: isSubmitting ? 0.7 : 1
+                        }}
+                        onMouseOver={(e) => {
+                          if (!isSubmitting) {
+                            e.target.style.backgroundColor = "rgba(0, 119, 255, 0.9)";
+                            e.target.style.transform = "translateY(-2px)";
+                          }
+                        }}
+                        onMouseOut={(e) => {
+                          if (!isSubmitting) {
+                            e.target.style.backgroundColor = "rgba(0, 119, 255, 0.7)";
+                            e.target.style.transform = "translateY(0)";
+                          }
+                        }}
+                      >
+                        {isSubmitting ? "Sending..." : "Send Message 📧"}
+                      </button>
+                    </div>
+
+                    {/* Status Messages */}
+                    {submitStatus === 'success' && (
+                      <div style={{
+                        padding: "15px",
+                        backgroundColor: "rgba(76, 175, 80, 0.1)",
+                        border: "2px solid rgba(76, 175, 80, 0.3)",
+                        borderRadius: "8px",
+                        color: "#4CAF50",
+                        textAlign: "center",
+                        fontSize: "1rem"
+                      }}>
+                        ✅ Your email client should open now. If not, please copy the message and send it manually to kiransaikiran057@gmail.com
+                      </div>
+                    )}
+
+                    {submitStatus === 'error' && (
+                      <div style={{
+                        padding: "15px",
+                        backgroundColor: "rgba(244, 67, 54, 0.1)",
+                        border: "2px solid rgba(244, 67, 54, 0.3)",
+                        borderRadius: "8px",
+                        color: "#f44336",
+                        textAlign: "center",
+                        fontSize: "1rem"
+                      }}>
+                        ❌ Something went wrong. Please try again or contact me directly at kiransaikiran057@gmail.com
+                      </div>
+                    )}
+                  </form>
+
+                  {/* Form Footer */}
+                  <div style={{
+                    marginTop: "30px",
+                    padding: "20px",
+                    backgroundColor: "rgba(0, 119, 255, 0.05)",
+                    borderRadius: "8px",
+                    textAlign: "center",
+                    fontSize: "0.95rem",
+                    color: "var(--ifm-color-emphasis-600)"
+                  }}>
+                    <p style={{margin: "0 0 10px 0"}}>
+                      🔒 Your information is secure and will only be used to respond to your inquiry.
+                    </p>
+                    <p style={{margin: 0}}>
+                      For immediate assistance, feel free to call or WhatsApp me directly.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

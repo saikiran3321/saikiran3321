@@ -461,3 +461,21 @@
   height: 35px;
   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 1); */
 }
+
+/* Contact Form Responsive Styles */
+@media (max-width: 768px) {
+  .step-content form > div:first-child {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .step-content {
+    padding: 20px !important;
+  }
+}
+
+/* Form Input Focus States */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 119, 255, 0.1);
+}
