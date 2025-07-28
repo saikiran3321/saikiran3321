@@ -1,0 +1,8 @@
+{
+  "label": "LLM Fundamentals",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn the fundamentals of Large Language Models (LLM)"
+  }
+}
