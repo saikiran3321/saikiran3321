@@ -262,6 +262,11 @@ const contact = () => {
                 </div>
               </div>
 
+              {/* Contact Details Section */}
+              <div style={{marginBottom: "40px"}}>
+                <h2 style={{marginBottom: "30px", textAlign: "center"}}>My Contact Information</h2>
+              </div>
+
               {/* Contact Information Cards */}
               <div style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "30px", marginBottom: "40px"}}>
                 
