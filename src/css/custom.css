@@ -466,6 +466,19 @@
 .blog-wrapper {
   max-width: none !important;
   padding: 0 !important;
+  width: 100% !important;
+}
+
+.blog-wrapper .container {
+  max-width: none !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+.blog-wrapper .container-fluid {
+  max-width: none !important;
+  padding: 0 !important;
+  width: 100% !important;
 }
 
 .blog-list__item {
