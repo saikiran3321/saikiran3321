@@ -1,0 +1,8 @@
+{
+  "label": "MCP (Model Context Protocol)",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn about Model Context Protocol (MCP) - the standardized way for AI models to securely access external data and tools"
+  }
+}
