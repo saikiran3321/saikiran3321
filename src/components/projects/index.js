@@ -12,10 +12,10 @@ const projects = () => {
               <p style={{whiteSpace:"normal",fontSize: "1rem"}}>I love building cool projects! Here, you'll find a curated collection of my creative and technical endeavors. Each project reflects my journey of <b>innovation</b>, <b>problem-solving</b>, and <b>continuous learning</b>.</p>
               <p style={{whiteSpace:"normal",fontSize: "1rem"}}>Feel free to explore this showcase of my <b>passion</b>, <b>expertise</b>, and <b>dedication</b> in action!</p>
               <div className="steps-container">
-                <div class="step">
-                  <div class="circle">01</div>
+                <div className="step">
+                  <div className="circle">01</div>
                   <div className="step-content">
-                    <div class="title">CarTrade Exchange</div>
+                    <div className="title">CarTrade Exchange</div>
                     <div className="icon-tech">
                       <img src="/img/tech/html5.svg" alt="html" width={30} height={30}/>
                       <img src="/img/tech/css3.svg" width={40} height={40} alt="CSS" />
@@ -33,7 +33,7 @@ const projects = () => {
                       <img src="/img/tech/cypress.svg" alt="cypress" width={40} height={40}/>
                       <img src="/img/tech/sonarqube.svg" alt="sonarqube" width={40} height={40} className="icon-change"/>
                     </div>
-                    <ul class="caption">
+                    <ul className="caption">
                       <li style={{whiteSpace:"normal",fontSize: "1rem"}}><b>Objective:</b> Developed a vehicle loan facilitation platform for CarTrade, CarWale, and BikeWale, connecting customers with multiple financial institutions to provide secure and competitive loan offers.</li>
                       <li style={{whiteSpace:"normal",fontSize: "1rem"}}><b>Key Contributions:</b> Architected and developed the entire system from front-end to back-end, implementing a dynamic customer portal where users could securely submit their vehicle and personal details to receive instant loan eligibility results.</li>
                       <li style={{whiteSpace:"normal",fontSize: "1rem"}}><b>Security & Data Privacy:</b> Played a pivotal role in encrypting sensitive customer information using advanced cryptographic techniques, ensuring secure data transmission between CarTrade and partnering banks.</li>
@@ -42,10 +42,10 @@ const projects = () => {
                     </ul>
                   </div>
                 </div>
-                <div class="step">
-                  <div class="circle">02</div>
+                <div className="step">
+                  <div className="circle">02</div>
                   <div className="step-content">
-                    <div class="title">Bajaj Auto Finance</div>
+                    <div className="title">Bajaj Auto Finance</div>
                     <div className="icon-tech">
                       <img src="/img/tech/html5.svg" alt="html" width={30} height={30}/>
                       <img src="/img/tech/css3.svg" width={40} height={40} alt="CSS" />
@@ -63,7 +63,7 @@ const projects = () => {
                       <img src="/img/tech/cypress.svg" alt="cypress" width={40} height={40}/>
                       <img src="/img/tech/sonarqube.svg" alt="sonarqube" width={40} height={40} className="icon-change"/>
                     </div>
-                    <ul class="caption">
+                    <ul className="caption">
                       <li style={{whiteSpace:"normal",fontSize: "1rem"}}><b>Objective:</b> Built a seamless vehicle financing system for Bajaj Auto Finance, offering customers and dealers a fast and efficient way to secure loans for new bikes and commercial vehicles.</li>
                       <li style={{whiteSpace:"normal",fontSize: "1rem"}}><b>Key Contributions:</b> Designed and implemented two workflows – Dealer Sales Executive (DSE) and Direct Customer Flow (D2C). In the DSE flow, dealers submitted customer information, and in the D2C flow, customers independently checked available loan offers based on their profiles.</li>
                       <li style={{whiteSpace:"normal",fontSize: "1rem"}}><b>API Integration:</b> Integrated multiple banking APIs to fetch real-time loan offers, ensuring that the customer received the best possible financing options. Successfully tackled challenges related to encryption algorithms specific to each bank, ensuring smooth and secure API communication.</li>
@@ -71,10 +71,10 @@ const projects = () => {
                     </ul>
                   </div>
                 </div>
-                <div class="step">
-                  <div class="circle">03</div>
+                <div className="step">
+                  <div className="circle">03</div>
                   <div className="step-content">
-                    <div class="title">Mahindra Auto Finance</div>
+                    <div className="title">Mahindra Auto Finance</div>
                     <div className="icon-tech">
                       <img src="/img/tech/html5.svg" alt="html" width={30} height={30}/>
                       <img src="/img/tech/css3.svg" width={40} height={40} alt="CSS" />
@@ -92,7 +92,7 @@ const projects = () => {
                       <img src="/img/tech/cypress.svg" alt="cypress" width={40} height={40}/>
                       <img src="/img/tech/sonarqube.svg" alt="sonarqube" width={40} height={40} className="icon-change"/>
                     </div>
-                    <ul class="caption">
+                    <ul className="caption">
                       <li style={{whiteSpace:"normal",fontSize: "1rem"}}><b>Objective:</b> Delivered a comprehensive vehicle financing platform for Mahindra Auto Finance, managing end-to-end workflows from lead generation to disbursal of loans for new car purchases.</li>
                       <li style={{whiteSpace:"normal",fontSize: "1rem"}}><b>Key Contributions:</b> Developed an application allowing sales executives to post customer leads, which were then matched with loan offers from banks based on the customer’s profile and selected vehicle.The platform simplified the decision-making process for both sales executives and customers by presenting personalized loan offers.</li>
                       <li style={{whiteSpace:"normal",fontSize: "1rem"}}><b>Challenges:</b> Overcame complex challenges in integrating APIs from various financial institutions, each with unique encryption and authentication protocols, ensuring secure and reliable communication.</li>
@@ -100,10 +100,10 @@ const projects = () => {
                     </ul>
                   </div>
                 </div>
-                <div class="step">
-                  <div class="circle">04</div>
+                <div className="step">
+                  <div className="circle">04</div>
                   <div className="step-content">
-                    <div class="title">OLX Vehicle Finance</div>
+                    <div className="title">OLX Vehicle Finance</div>
                     <div className="icon-tech">
                       <img src="/img/tech/html5.svg" alt="html" width={30} height={30}/>
                       <img src="/img/tech/css3.svg" width={40} height={40} alt="CSS" />
@@ -121,7 +121,7 @@ const projects = () => {
                       <img src="/img/tech/cypress.svg" alt="cypress" width={40} height={40}/>
                       <img src="/img/tech/sonarqube.svg" alt="sonarqube" width={40} height={40} className="icon-change"/>
                     </div>
-                    <ul class="caption">
+                    <ul className="caption">
                       <li style={{whiteSpace:"normal",fontSize: "1rem"}}><b>Objective:</b> Recently worked on OLX where customers could apply for financing directly through the platform for the vehicle they selected, simplifying the process of securing funds for used vehicles listed on OLX.</li>
                       <li style={{whiteSpace:"normal",fontSize: "1rem"}}><b>Key Contributions:</b> Developed the customer-facing interface where users could select a vehicle and view personalized loan offers based on the vehicle’s value and their financial profile. The platform connected users with a range of financial institutions, making the financing process more transparent and user-friendly.</li>
                       <li style={{whiteSpace:"normal",fontSize: "1rem"}}><b>User Experience:</b> Focused on improving the user journey by creating an intuitive application form that guided customers through the process of submitting personal and financial details, with real-time updates on their financing options.</li>
