@@ -12,13 +12,13 @@
 
 :root {
   font-family: Cambria, Times New Roman, Avenir, Helvetica, Arial, sans-serif;
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #0077ffb3;
+  --ifm-color-primary-dark: #0066e6b3;
+  --ifm-color-primary-darker: #0055ccb3;
+  --ifm-color-primary-darkest: #0044b3b3;
+  --ifm-color-primary-light: #3388ffb3;
+  --ifm-color-primary-lighter: #66aaffb3;
+  --ifm-color-primary-lightest: #99ccffb3;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --icon-color: #222;
@@ -28,13 +28,13 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #0077ffb3;
+  --ifm-color-primary-dark: #0066e6b3;
+  --ifm-color-primary-darker: #0055ccb3;
+  --ifm-color-primary-darkest: #0044b3b3;
+  --ifm-color-primary-light: #3388ffb3;
+  --ifm-color-primary-lighter: #66aaffb3;
+  --ifm-color-primary-lightest: #99ccffb3;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --icon-color: #fff;
   --new-color: #222;
@@ -215,6 +215,10 @@
   display: flex;
 }
 
+#__docusaurus_skipToContent_fallback {
+  padding: 0px 20px !important;
+}
+
 .main-container {
   display: flex;
   justify-content: space-between;
@@ -237,6 +241,9 @@
   .left-container {
     width: 100%;
   }
+  #__docusaurus_skipToContent_fallback {
+    padding: 0px 10px !important;
+  }
 }
 @media (max-width: 425px) {
   .container {
@@ -247,6 +254,9 @@
   }
   .left-container {
     width: 100%;
+  }
+  #__docusaurus_skipToContent_fallback {
+    padding: 0px 10px !important;
   }
 }
 @media (max-width: 390px) {
@@ -259,6 +269,9 @@
   .left-container {
     width: 100%;
   }
+  #__docusaurus_skipToContent_fallback {
+    padding: 0px 10px !important;
+  }
 }
 @media (max-width: 320px) {
   .container {
@@ -269,6 +282,9 @@
   }
   .left-container {
     width: 100%;
+  }
+  #__docusaurus_skipToContent_fallback {
+    padding: 0px 10px !important;
   }
 }
 
@@ -1007,6 +1023,10 @@
     font-size: 1rem;
   }
   
+  .blog-list-grid {
+    grid-template-columns: 1fr;
+  }
+  
   .blog-post-card {
     margin: 0 0.5rem;
   }
@@ -1634,12 +1654,34 @@
 
 /* Contact Form Responsive Styles */
 @media (max-width: 768px) {
-  .step-content form > div:first-child {
-    grid-template-columns: 1fr !important;
-  }
-  
   .step-content {
-    padding: 20px !important;
+    padding: 20px;
+  }
+  .step-content form > div {
+    grid-template-columns: 1fr;
+  }
+  .step-content form > div > div {
+    margin-bottom: 15px;
+  }
+  .step-content h2, .step-content h3, .step-content p {
+    font-size: 1rem;
+  }
+  .step-content button {
+    padding: 10px 20px;
+  }
+  .step-content .title {
+    font-size: 1.2rem;
+  }
+  .step-content .icon {
+    width: 60px;
+    height: 60px;
+  }
+  .step-content .icon img {
+    width: 30px;
+    height: 30px;
+  }
+  .step-content .icon-container {
+    margin: 15px;
   }
 }
 
