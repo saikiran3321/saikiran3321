@@ -23,10 +23,12 @@ const config = {
       'classic',
       ({
         docs: {
+          path: 'docs',
           sidebarPath: './sidebars.js',
           editUrl: 'https://github.com/saikiran3321/saikiran3321',
         },
         blog: {
+          path: 'blog',
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
@@ -50,6 +52,11 @@ const config = {
         name: "custom-routes",
         async contentLoaded({ actions }) {
           const { addRoute } = actions;
+          addRoute({
+            path: "/",
+            exact: true,
+            component: "@site/src/pages/index.js",
+          });
           addRoute({
             path: "/about",
             exact: true,
