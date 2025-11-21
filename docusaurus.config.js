@@ -77,6 +77,11 @@ const config = {
             exact: true,
             component: "@site/src/components/contact/index.js",
           });
+          addRoute({
+            path: "/test",
+            exact: true,
+            component: "@site/src/components/test/index.js",
+          });
         },
       };
     },
@@ -128,6 +133,9 @@ const config = {
             to: "/contact",
             html: '<span class="navbar-icon-wrapper"><img src="/img/contact.svg" class="navbar-icon" /><span class="tooltip">Contact</span></span>',
             position: "right",
+          },
+          {
+            to: "/test"
           }
         ],
       },
